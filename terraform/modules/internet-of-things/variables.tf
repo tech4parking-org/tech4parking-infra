@@ -1,0 +1,1 @@
+variable "process_car_parking_lambda_arn" {}
