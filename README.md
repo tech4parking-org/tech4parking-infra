@@ -95,6 +95,19 @@ terraform apply
 
 Valores sensíveis ficam em `*.tfvars` (ignorados pelo git). Planos (`tfplan`) também não são versionados.
 
+## Como validar a entrega
+
+Em uma validação end-to-end, o `terraform apply` deve criar a infraestrutura completa e o site deve responder pelo domínio, com a API e o IoT integrados à Lambda.
+
+Pontos principais de validação:
+
+- `terraform validate` sem erros e `terraform plan` sem falhas;
+- VPC com 2 subnets públicas, 2 privadas, Internet Gateway e NAT Gateway;
+- serviço ECS Fargate com 2 tasks saudáveis no target group do ALB;
+- domínio no Route 53 com certificado ACM validado;
+- API Gateway `/spots` invocando a Lambda, com a tabela `ParkingSpots` criada;
+- regra IoT `parking_sensor` ativa e com permissão para invocar a Lambda.
+
 ## Projeto Tech4Parking
 
 | Repositório | Camada |
