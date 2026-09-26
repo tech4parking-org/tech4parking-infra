@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/logo.png" alt="T4Parking" width="260" />
+</p>
+
 <h1 align="center">
   Tech4Parking · Infra
 </h1>
@@ -69,7 +73,9 @@ tech4parking-infra/
 │   ├── variables.tf             # Variáveis e valores padrão
 │   ├── modules.tf               # Composição dos módulos
 │   └── modules/                 # network, compute, application, database, services...
-├── docs/arch.gif                # Diagrama da arquitetura
+├── docs/
+│   ├── arch.gif                 # Diagrama da arquitetura
+│   └── logo.png                 # Logo T4Parking
 └── README.md
 ```
 
