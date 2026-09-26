@@ -118,10 +118,10 @@ Pontos principais de validação:
 
 | Repositório | Camada |
 |---|---|
-| [tech4parking-front](https://github.com/willtechdev/tech4parking-front) | Web app (Next.js) |
-| [tech4parking-back](https://github.com/willtechdev/tech4parking-back) | Lambda de vagas (sensor + API) |
+| [tech4parking-front](https://github.com/tech4parking-org/tech4parking-front) | Web app (Next.js) |
+| [tech4parking-back](https://github.com/tech4parking-org/tech4parking-back) | Lambda de vagas (sensor + API) |
 | **tech4parking-infra** | Infraestrutura AWS (Terraform) |
-| [tech4parking-iot](https://github.com/willtechdev/tech4parking-iot) | Firmware do sensor (ESP32) |
+| [tech4parking-iot](https://github.com/tech4parking-org/tech4parking-iot) | Firmware do sensor (ESP32) |
 
 ## Autor
 
